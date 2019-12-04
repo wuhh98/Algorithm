@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Cobble {
 	public static void main (String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("输入石子堆数：");
+		System.out.println("请输入石子堆数");
 		int n = in.nextInt();
 		int b =n;
 		int k = 0;
@@ -14,13 +14,13 @@ public class Cobble {
 		int[] cob = new int[n];
 		int[] cob1 = new int[n];
 		int[] add = new int[n];
-		System.out.println("输入每堆石子个数");
+		System.out.println("请输入每堆石子的个数");
 		for(int i=0;i<n;i++) 
 		{
 			cob1[i] = cob[i] = in.nextInt();
 			
 		}
-		while(n>2) {					//求最大积分
+		while(n>2) {					//求最大
 			for(int i=0;i<n;i++)
 		{
 			if(i<n-1)add[i] = cob[i] + cob[i+1];
@@ -48,10 +48,10 @@ public class Cobble {
 		n--;
 		}
 		sum += (cob[0] + cob[1]);
-		System.out.print("最大得分：");
+		System.out.print("最大为");
 		System.out.println(sum);
 		k =0;
-		while(b>2) {					//求最小积分
+		while(b>2) {					//求最小
 			for(int i=0;i<b;i++)
 		{
 			if(i<b-1)add[i] = cob1[i] + cob1[i+1];
@@ -79,7 +79,7 @@ public class Cobble {
 		b--;
 		}
 		sum1 += (cob1[0] + cob1[1]);
-		System.out.print("最小得分：");
+		System.out.print("最小为");
 		System.out.println(sum1);
 	}
 }

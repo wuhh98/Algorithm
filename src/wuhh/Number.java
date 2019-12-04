@@ -6,11 +6,11 @@ public class Number {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
-		System.out.println("璇疯緭鍏ユ暟瀛椾笁瑙掑舰琛屾暟");
+		System.out.println("请输入数字三角形行数");
 		int n = in.nextInt();
 		int[][] number = new int[100][100];
 		int[] number1 = new int[100]; 
-		System.out.println("璇疯緭鍏ユ暟瀛椾笁瑙掑舰");
+		System.out.println("请输入数字三角形数");
 		for(int i=0;i<n;i++)
 			for(int j=0;j<=i;j++)
 		{
